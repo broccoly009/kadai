@@ -14,10 +14,25 @@ imagesc(ORG); colormap(gray); colorbar;
 
 図１．白黒濃淡画像
 
+次に、閾値128で二値化した図を以下に示す。
+
+IMG = ORG > 128; % 閾値128で二値化
+
+imagesc(IMG); colormap(gray); colorbar; % 画像の表示
+
 ![原画像](https://github.com/broccoly009/kadai/blob/master/image/kadai8-2.png)
 
+図２．閾値128で二値化した画像
+
+二値化した画像にラベリングを行う。
+
+IMG = bwlabeln(IMG);
+
+imagesc(IMG); colormap(jet); colorbar; % 画像の表示
 
 ![原画像](https://github.com/broccoly009/kadai/blob/master/image/kadai8-3.png)
+
+図３．二値化画像をラベリングした画像
 
 
 
