@@ -71,4 +71,5 @@ imagesc(IMG); colormap(gray); colorbar; axis image;
 
 図４．８階調処理画像
 
+より細かく値を分けることで表現できる色が増えていることが分かる。
 
