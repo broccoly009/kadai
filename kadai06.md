@@ -14,15 +14,23 @@ imagesc(ORG); colormap(gray); colorbar;
 
 図１．白黒濃淡画像
 
-次に、
+次に、256階調の白黒濃淡画像128で二値化した場合の結果を示す。
 
 IMG = ORG>128; % 128による二値化
 
 imagesc(IMG); colormap(gray); colorbar; % 画像の表示
 
+![原画像](https://github.com/broccoly009/kadai/blob/master/image/kadai6-2.png)
 
+図２．128による二値化
+
+次に、ディザ法によって二値化した場合の結果を示す。
 
 IMG = dither(ORG); % ディザ法による二値化
 
 imagesc(IMG); colormap(gray); colorbar; % 画像の表示
+
+![原画像](https://github.com/broccoly009/kadai/blob/master/image/kadai6-3.png)
+
+図３．ディザ法による二値化
 
