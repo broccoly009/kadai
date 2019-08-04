@@ -12,11 +12,44 @@ imhist(ORG); % 濃度ヒストグラムを生成、表示
 
 上記で原画像を読み込み、白黒濃淡画像に変更したものと、濃度ヒストグラムを以下に示す。
 
+![原画像](https://github.com/broccoly009/kadai/blob/master/image/kadai7-1.png)
+
+図１．白黒濃淡画像
+
+![原画像](https://github.com/broccoly009/kadai/blob/master/image/kadai7-2.png)
+
+図２．濃度ヒストグラム
+
+次に、画素のダイナミックレンジを0〜255に拡大する。
+
+ORG = double(ORG);
+
+mn = min(ORG(:)); % 濃度値の最小値を算出
+
+mx = max(ORG(:)); % 濃度値の最大値を算出
+
+ORG = (ORG-mn)/(mx-mn)*255;
+
+imagesc(ORG); colormap(gray); colorbar; % 画像の表示
+
+ORG = uint8(ORG); % この行について考察せよ
+
+imhist(ORG); % 濃度ヒストグラムを生成、表示
 
 
+uint8は、変数を8ビットの符号なし整数に変換して格納する。今回はダイナミックレンジを拡大した時にORGを少数に変換したため、そのままではヒストグラムを生成することができないのでuint8を使用しヒストグラムを生成した。
 
+以下にダイナミックレンジを拡大した画像とその濃度ヒストグラムを示す。
 
+![原画像](https://github.com/broccoly009/kadai/blob/master/image/kadai7-3.png)
 
+図３．ダイナミックレンジを拡大した白黒濃淡画像
+
+![原画像](https://github.com/broccoly009/kadai/blob/master/image/kadai7-4.png)
+
+図４．ダイナミックレンジを拡大した濃度ヒストグラム
+
+今回、図1の原画像と図3のダイナミックレンジを拡大した画像の違い、図2のヒストグラムと図4のダイナミックレンジを拡大したヒストグラムの違いは見られなかった。 これは最近のカメラはすでにダイナミックレンジが広いため、今回使用した画像の濃度の最小値が0で最大値が255であったため変化がなかったと考えられる。
 
 
 
