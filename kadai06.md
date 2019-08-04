@@ -21,6 +21,7 @@ IMG = ORG>128; % 128による二値化
 imagesc(IMG); colormap(gray); colorbar; % 画像の表示
 
 
+
 IMG = dither(ORG); % ディザ法による二値化
 
 imagesc(IMG); colormap(gray); colorbar; % 画像の表示
