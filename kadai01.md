@@ -19,6 +19,7 @@
 以下に1/2サンプリングした画像を示す。
 
 ![原画像](https://github.com/broccoly009/kadai/blob/master/image/kadai1-1.png)
+
 図2　1/2サンプリングの結果
 
 
@@ -27,21 +28,25 @@
 　IMG = imresize(ORG,0.5); % 画像の縮小
 　IMG2 = imresize(IMG,4,'box'); % 画像の拡大
 ![原画像](https://github.com/broccoly009/kadai/blob/master/image/kadai1-2.png)
+
 図3　1/4サンプリングの結果
 
 　IMG = imresize(ORG,0.5); % 画像の縮小
 　IMG2 = imresize(IMG,8,'box'); % 画像の拡大
 ![原画像](https://github.com/broccoly009/kadai/blob/master/image/kadai1-3.png)
+
 図4　1/8サンプリングの結果
 
 　IMG = imresize(ORG,0.5); % 画像の縮小
 　IMG2 = imresize(IMG,16,'box'); % 画像の拡大
 ![原画像](https://github.com/broccoly009/kadai/blob/master/image/kadai1-4.png)
+
 図5　1/16サンプリングの結果
 
 　IMG = imresize(ORG,0.5); % 画像の縮小
 　IMG2 = imresize(IMG,32,'box'); % 画像の拡大
 ![原画像](https://github.com/broccoly009/kadai/blob/master/image/kadai1-5.png)
+
 図6　1/32サンプリングの結果
 
 
