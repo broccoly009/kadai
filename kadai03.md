@@ -15,6 +15,7 @@ imagesc(ORG); colormap(gray); colorbar; % 画像の表示
 図１．白黒濃淡画像
 
 
+
 次に、輝度値が64以上の画素を1，その他を0に変換したものを示す。
 
 IMG = ORG > 64; % 輝度値が64以上の画素を1，その他を0に変換
@@ -24,6 +25,7 @@ imagesc(IMG); colormap(gray); colorbar;
 ![原画像](https://github.com/broccoly009/kadai/blob/master/image/kadai3-2.png)
 
 図２．輝度値が64以上の画素を1，その他を0に変換
+
 
 
 次に、輝度値が96以上の画素を1，その他を0に変換したものを示す。
@@ -37,6 +39,7 @@ imagesc(IMG); colormap(gray); colorbar;
 図３．輝度値が96以上の画素を1，その他を0に変換
 
 
+
 次に、輝度値が128以上の画素を1，その他を0に変換したものを示す。
 
 IMG = ORG > 128; % 輝度値が128以上の画素を1，その他を0に変換
@@ -46,6 +49,7 @@ imagesc(IMG); colormap(gray); colorbar;
 ![原画像](https://github.com/broccoly009/kadai/blob/master/image/kadai3-4.png)
 
 図４．輝度値が128以上の画素を1，その他を0に変換
+
 
 
 最後に、輝度値が192以上の画素を1，その他を0に変換したものを示す。
