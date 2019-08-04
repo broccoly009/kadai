@@ -8,7 +8,7 @@ imagesc(ORG); axis image; % 画像の表示
 
 上記により原画像を読み込み白黒濃淡画像に変更する。結果を以下に示す。
 
-https://github.com/broccoly009/kadai/blob/master/image/kadai2-1.png
+![原画像](https://github.com/broccoly009/kadai/blob/master/image/kadai2-1.png)
 
 図１．白黒濃淡画像
 
@@ -18,7 +18,7 @@ IMG = ORG>128;
 imagesc(IMG); colormap(gray); colorbar; axis image;
 
 
-https://github.com/broccoly009/kadai/blob/master/image/kadai2-2.png
+![原画像](https://github.com/broccoly009/kadai/blob/master/image/kadai2-2.png)
 
 図２．２階調処理画像
 
@@ -30,7 +30,7 @@ IMG2 = ORG>192;
 IMG = IMG0 + IMG1 + IMG2;
 imagesc(IMG); colormap(gray); colorbar; axis image;
 
-https://github.com/broccoly009/kadai/blob/master/image/kadai2-3.png
+![原画像](https://github.com/broccoly009/kadai/blob/master/image/kadai2-3.png)
 
 図３．４階調処理画像
 
@@ -47,7 +47,7 @@ IMG7 = ORG>256;
 IMG = IMG0 + IMG1 + IMG2 + IMG3 + IMG4 + IMG5 + IMG6 + IMG7;
 imagesc(IMG); colormap(gray); colorbar; axis image;
 
-https://github.com/broccoly009/kadai/blob/master/image/kadai2-4.png
+![原画像](https://github.com/broccoly009/kadai/blob/master/image/kadai2-4.png)
 
 図４．８階調処理画像
 
